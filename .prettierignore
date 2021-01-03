@@ -1,0 +1,13 @@
+# Add files here to ignore them from prettier formatting
+
+/dist
+/public
+/coverage
+
+/apps/internet/node_modules
+/apps/internet/public
+/apps/internet/.cache
+
+/apps/fibra-planos/node_modules
+/apps/fibra-planos/public
+/apps/fibra-planos/.cache
