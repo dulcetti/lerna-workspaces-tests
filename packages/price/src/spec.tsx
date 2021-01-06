@@ -18,4 +18,11 @@ describe('<Price />', () => {
     const price = screen.getByText(/1.599/i);
     expect(price).toBeInTheDocument();
   });
+
+  test('should be rendered the prefix prop', () => {
+    render(<Price prefix="por" value="199,90" />);
+
+    const prefix = screen.getByText(/por/i);
+    expect(prefix).toBeInTheDocument();
+  });
 });
