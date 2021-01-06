@@ -32,4 +32,11 @@ describe('<Price />', () => {
     const suffix = screen.getByText(/\/mês/i);
     expect(suffix).toBeInTheDocument();
   });
+
+  test('should be rendered the correct template', () => {
+    const { container } = render(<Price template="linear" value="199,90" />);
+    const element = container.querySelector('.-linear');
+
+    expect(element).not.toHaveClass('-default');
+  });
 });
