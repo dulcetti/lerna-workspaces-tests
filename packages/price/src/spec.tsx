@@ -25,4 +25,11 @@ describe('<Price />', () => {
     const prefix = screen.getByText(/por/i);
     expect(prefix).toBeInTheDocument();
   });
+
+  test('should be rendered the suffix prop', () => {
+    render(<Price suffix="/mês" value="199,90" />);
+
+    const suffix = screen.getByText(/\/mês/i);
+    expect(suffix).toBeInTheDocument();
+  });
 });
