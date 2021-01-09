@@ -10,4 +10,5 @@ module.exports = {
     '@babel/preset-typescript',
     ['@babel/preset-env', { targets: { node: 'current' } }],
   ],
+  ignore: ['**/stories.tsx', '**/spec.tsx', '**/styles.ts', '**/interface.ts'],
 };
