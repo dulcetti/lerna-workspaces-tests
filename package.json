@@ -3,7 +3,7 @@
   "private": true,
   "scripts": {
     "bootstrap": "lerna bootstrap --use-workspaces",
-    "build": "lerna exec --parallel -- babel --extensions .ts,.tsx --root-mode upward src -d lib",
+    "build": "lerna exec --parallel -- babel --extensions .ts,.tsx --root-mode upward src -d lib --ignore **/stories.tsx,**/spec.tsx,**/styles.ts,**/interface.ts",
     "storybook": "start-storybook -p 5555",
     "test": "jest  --watchAll --coverage",
     "test:coverage": "jest --coverage --watchAll=false"
